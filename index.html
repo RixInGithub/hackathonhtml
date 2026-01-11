@@ -6,29 +6,39 @@
 			@import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big&display=swap");
 			@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap");
 			@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500&display=swap");
-			body {line-height:1;--bg3:linear-gradient(180deg,#ccd6eb 0%,#e9ecf5 60.58%);display:flex;flex-direction:column;margin:0;font:20px "Radio Canada Big",sans-serif;}
-			nav {color:#d7d7d7;background-color:#034748;display:flex;flex-direction:row;align-items:center;padding:20px;gap:20px;box-sizing:border-box;}
-			div.a {/*height:479.75px;*/background:var(--bg3);}
-			div.a>*{text-align:center;margin:32px 0;font-weight:400;font-size:40px;}
-			div.a>h1,div.c>h1{font-size:80px;margin:0;}
+			body {line-height:1;--bg3:linear-gradient(180deg,#ccd6eb 0%,#e9ecf5 60.58%);--white:#f6f8fb;display:flex;flex-direction:column;margin:0;font:20px "Radio Canada Big",sans-serif;}
+			nav, footer {color:var(--white);background-color:#034748;display:flex;flex-direction:row;align-items:center;padding:20px;gap:20px;box-sizing:border-box;}
+			body>div.a {/*height:479.75px;*/background:var(--bg3);}
+			body>div.a>*{text-align:center;margin:32px 0;font-weight:400;font-size:40px;}
+			body>div.a>h1,div.c>h1{font-size:80px;margin:0;}
 			h1.a{font-family:"Source Serif 4";margin-top:45px;}
 			h1.b{font-family:"Radio Canada Big";margin-bottom:32px;}
-			div.a>div,code{font-family:"Geist Mono";font-weight: 500;font-size: 14px;color:#ccd6eb;}
-			div.a>div>*{background-color:#034748;padding:16px;}
-			div.b{padding:33.73px;padding-left:0;background-color:#ccd6eb;}
-			div.b>h1{font-size:38.95px;text-align:center;margin:0 126.575px;margin-bottom:33.73px;font-weight:400;}
-			div.b>div{display:flex;flex-direction:row;}
-			div.b>div>img{aspect-ratio:674.74/488.77;width:50%;height:36.2%;object-fit:cover;}
-			div.b>div>div{margin:0;padding-left:33.73px;width:50%;display:flex;flex-direction:column;justify-content: center;}
+			body>div.a>div,code{font-family:"Geist Mono";font-weight: 500;font-size: 14px;color:#ccd6eb;}
+			body>div.a>div>*{background-color:#034748;padding:16px;}
+			body>div.b{padding:33.73px;padding-left:0;background-color:#ccd6eb;}
+			body>div.b>h1{font-size:38.95px;text-align:center;margin:0 126.575px;margin-bottom:33.73px;font-weight:400;}
+			body>div.b>div{display:flex;flex-direction:row;}
+			body>div.b>div>img{aspect-ratio:674.74/488.77;width:50%;height:36.2%;object-fit:cover;}
+			body>div.b>div>div{margin:0;padding-left:33.73px;width:50%;display:flex;flex-direction:column;justify-content: center;}
 			code{font-size:13.6311px;color:#6c6c6c;}
-			div.b>div>div>div{gap:15.58px;padding:23.37px 0;border:solid #034748;border-width: 0.97px 0;font-size:19.47px;display:flex;flex-direction:column;}
-			div.b>div>div>div:not(:last-child){border-bottom:0;}
-			div.b>div>div>div>div{display:flex;flex-direction:row;}
-			div.b>div>div>div>*,div.b>div>div>div>* *{margin:0;}
-			div.b>div>div>div>div>p{flex-grow:1;}
-			div.b>div>div>div>div>code{flex-shrink:0;}
-			div.c{background-color:#034748;padding:120px 0;}
-			div.d{background:var(--bg3);padding:0 20px;}
+			body>div.b>div>div>div{gap:15.58px;padding:23.37px 0;border:solid #034748;border-width: 0.97px 0;font-size:19.47px;display:flex;flex-direction:column;}
+			body>div.b>div>div>div:not(:last-child){border-bottom:0;}
+			body>div.b>div>div>div>div{display:flex;flex-direction:row;}
+			body>div.b>div>div>div>*,div.b>div>div>div>* *{margin:0;}
+			body>div.b>div>div>div>p{font-family:"Source Serif 4";font-weight:400;}
+			body>div.b>div>div>div>div>p{flex-grow:1;}
+			body>div.b>div>div>div>div>code{flex-shrink:0;}
+			body>div.c{background-color:#034748;padding:120px 20px;color:var(--white);}
+			body>div.c>h1{text-align:center;margin-top:0;}
+			body>div.c>div{display:flex;flex-direction:row;gap:16px;height:246px;}
+			body>div.c>div>div{flex-grow:1;background-color:var(--white);color:#000;padding:16px;border-radius:16px;display:flex;flex-direction:column;gap:24px;}
+			body>div.c>div>div>div.a{flex-shrink:0;font-size:0;}
+			body>div.c>div>div>div.a>img{width:42px;height:42px;}
+			body>div.c>div>div>div.b{flex-grow:1;display:flex;flex-direction:column;gap:8px;}
+			body>div.c>div>div>div.b>p{margin:0;}
+			body>div.c>div>div>div.b>p:last-child{font-family:"Source Serif 4";}
+			body>div.d{background:var(--bg3);padding:0 20px;}
+			footer{background-color:#001021;}
 		</style>
 	</head>
 	<body>
@@ -80,12 +90,33 @@
 			<h1 class="b">placeholder</h1>
 			<div>
 				<div>
-					
+					<div class="a"><img src="broken"></div>
+					<div class="b">
+						<p>placeholder</p>
+						<p>placeholder</p>
+					</div>
+				</div>
+				<div>
+					<div class="a"><img src="broken"></div>
+					<div class="b">
+						<p>placeholder</p>
+						<p>placeholder</p>
+					</div>
+				</div>
+				<div>
+					<div class="a"><img src="broken"></div>
+					<div class="b">
+						<p>placeholder</p>
+						<p>placeholder</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="d">
-			
+			<p>a totally real api error happened while accessing blog: 404 Not Found</p>
 		</div>
+		<footer>
+			<span>Prisijungti</span><span>DUK</span><span>Apie mus</span><span>Kontaktai</span>
+		</footer>
 	</body>
 </html>
